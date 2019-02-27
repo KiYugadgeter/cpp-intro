@@ -13610,7 +13610,7 @@ delete ポインター</code></pre>
 <p>このようにテンプレートで書くことによって、クラス名を意識せずに破棄ができる。</p>
 <div class="sourceCode" id="cb1252"><pre class="sourceCode cpp"><code class="sourceCode cpp"><a class="sourceLine" id="cb1252-1" data-line-number="1"><span class="co">// 破棄</span></a>
 <a class="sourceLine" id="cb1252-2" data-line-number="2">destroy_at( s ) ;</a></code></pre></div>
-<p>このようなコードを書くのは面倒なので、標準ライブラリには<code>std::destory_at</code>がある。また、これらをひっくるめたあロケーターを使うためのライブラリである<code>allocator_traits</code>がある。</p>
+<p>このようなコードを書くのは面倒なので、標準ライブラリには<code>std::destory_at</code>がある。また、これらをひっくるめたアロケーターを使うためのライブラリである<code>allocator_traits</code>がある。</p>
 <h2 id="stdallocator_traitsalloc"><code>std::allocator_traits&lt;Alloc&gt;</code></h2>
 <p><code>std::allocator_traits&lt;Alloc&gt;</code>はアロケーター<code>Alloc</code>を簡単に使うためのライブラリだ。</p>
 <p><code>allocator_traits&lt;Alloc&gt;</code>はアロケーターの型<code>Alloc</code>を指定して使う。</p>
